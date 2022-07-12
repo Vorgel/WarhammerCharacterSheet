@@ -1,0 +1,185 @@
+<main class="container">
+  <div class="row justify-content-evenly">
+
+    <div class="col-8">
+      <div class="set" (change)="editCharacter()">
+        <h1> Ogólne </h1>
+
+        <div class="row">
+          <div class="col-md-6">
+            <label class="form-label" for="inputName">Imie</label>
+            <input value="{{character.name}}" [(ngModel)]="character.name" type="text" class="form-control" id="inputName" > 
+          </div>
+  
+          <div class="col-md-6">
+            <label class="form-label" for="inputRace">Rasa</label>
+            <input value="{{character.race}}" [(ngModel)]="character.race" type="text" class="form-control" id="inputRace">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label class="form-label" for="inputAge">Wiek</label>
+            <input value="{{character.age}}" [(ngModel)]="character.age" type="number" class="form-control" id="inputAge">
+          </div>
+  
+          <div class="col-md-5">
+            <label class="form-label" for="inputClass">Klasa</label>
+            <input value="{{character.class}}" [(ngModel)]="character.class" type="text" class="form-control" id="inputClass">
+          </div>
+  
+          <div class="col-md-5">
+            <label class="form-label" for="inputClass">Status</label>
+            <input value="{{character.status}}" [(ngModel)]="character.status" type="text" class="form-control" id="inputStatus">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <label class="form-label" for="inputProfession">Profesja</label>
+            <input value="{{character.profession}}" [(ngModel)]="character.profession" type="text" class="form-control" id="inputProfession">
+          </div>
+  
+          <div class="col-6">
+            <label class="form-label" for="InputProfessionLevel">Poziom Profesji</label>
+            <input value="{{character.professionLevel}}" [(ngModel)]="character.professionLevel" type="text" class="form-control" id="InputProfessionLevel">
+          </div>
+        </div>
+
+        <div class="row"> 
+          <div class="col-12">
+            <label class="form-label" for="inputProfessionPath">Ścieżka Profesji</label>
+            <input value="{{character.professionPath}}" [(ngModel)]="character.professionPath" type="text" class="form-control" id="inputProfessionPath">
+          </div>
+  
+        </div>
+      </div>
+
+      <div class="set" (change)="editAppearance()">
+        <h1> Wygląd </h1>
+
+        <div class="row">
+  
+          <div class="col-md-2">
+            <label class="form-label" for="inputHeight">Wzrost</label>
+            <input value="{{character.appearance!.height}}" [(ngModel)]="character.appearance!.height" type="number" class="form-control" id="inputHeight">
+          </div>
+  
+          <div class="col-md-4">
+            <label class="form-label" for="inputEyesColor">Kolor oczu</label>
+            <input value="{{character.appearance!.eyesDescription}}" [(ngModel)]="character.appearance!.eyesDescription" type="text" class="form-control" id="inputEyesColor">
+          </div>
+  
+          <div class="col-md-6">
+            <label class="form-label" for="inputHair">Włosy</label>
+            <input value="{{character.appearance!.hairDescription}}" [(ngModel)]="character.appearance!.hairDescription" type="text" class="form-control" id="inputHair">
+          </div>
+  
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <label class="form-label" for="inputBodyDescription">Budowa ciała</label>
+            <input value="{{character.appearance!.bodyDescription}}" [(ngModel)]="character.appearance!.bodyDescription" type="text" class="form-control" id="inputBodyDescription">
+          </div>
+  
+          <div class="col-md-6">
+            <label class="form-label" for="inputDistinghusingFeatures">Znaki Szczególne</label>
+            <input value="{{character.appearance!.distinguishingFeatures}}" [(ngModel)]="character.appearance!.distinguishingFeatures" type="text" class="form-control" id="inputDistinghusingFeatures">
+          </div>
+        </div>
+      </div>
+
+      <div class="set">
+        <h1> Punkty </h1>
+
+        <div class="row">
+          <div class="col-md-5" (change)="editDestiny()">
+            <label class="form-label" for="inputDestinyPoints">Punkty Przeznaczenia</label>
+            <input value="{{character.destiny!.destinyPoints}}" [(ngModel)]="character.destiny!.destinyPoints" type="number" class="form-control" id="inputDestinyPoints">
+          </div>
+
+          <div class="col-md-5" (change)="editDestiny()">
+            <label class="form-label" for="inputLuckPoints">Punkty Szczęścia</label>
+            <input value="{{character.destiny!.luckPoints}}" [(ngModel)]="character.destiny!.luckPoints" type="number" class="form-control" id="inputLuckPoints">
+          </div>
+        </div>
+
+        <div class="row" (change)="editHeroStats()">
+          <div class="col-md-5" >
+            <label class="form-label" for="inputHeroPoints">Punkty Bohatera</label>
+            <input value="{{character.heroStats!.heroPoints}}" [(ngModel)]="character.heroStats!.heroPoints" type="number" class="form-control" id="inputHeroPoints">
+          </div>
+  
+          <div class="col-md-5" >
+            <label class="form-label" for="inputDeterminationPoints">Punkty Determinacji</label>
+            <input value="{{character.heroStats!.determinationPoints}}" [(ngModel)]="character.heroStats!.determinationPoints" type="number" class="form-control" id="inputDeterminationPoints">
+          </div>
+        </div>
+
+        <div class="row" (change)="editHeroStats()">
+          <div class="col-md-5">
+            <label class="form-label" for="inputMotivation">Motywacja</label>
+            <input value="{{character.heroStats!.motivation}}" [(ngModel)]="character.heroStats!.motivation" type="text" class="form-control" id="inputMotivation">
+          </div>
+        </div>
+      </div>
+
+      <div class="set" (change)="editExperience()">
+        <h1>Doświadczenie</h1>
+
+        <div class="row">
+          <div class="col-md-5">
+            <label class="form-label" for="inputCurrentExp">Aktualne</label>
+            <input value="{{character.experience!.available}}" [(ngModel)]="character.experience!.available" type="number" class="form-control" id="inputCurrentExp">
+          </div>
+  
+          <div class="col-md-5">
+            <label class="form-label" for="inputSpentExp">Wydane</label>
+            <input value="{{character.experience!.spent}}" [(ngModel)]="character.experience!.spent" type="number" class="form-control" id="inputSpentExp">
+          </div>
+
+          <div class="col-md-2 expSum">
+            <label class="form-label" for="inputSumExp">Suma</label>
+            <h3>{{character.experience!.spent + character.experience!.available}}</h3> 
+          </div>
+        </div>
+      </div>
+
+      <div class="set">
+        <h1>Psychologia</h1>
+        <div class="row">
+          <app-psychology-effect
+          *ngFor="let effect of character.psychologyEffects" 
+          [psychologyEffect]="effect"
+          (change)="editPsychologyEffect(effect)"
+          (onDeletePsychologyEffect)="deletePsychologyEffect(effect)" >
+        </app-psychology-effect>
+        </div>
+        <app-add-psychology-effect class="row" (onAddPsychologyEffect)="addPsychologyEffect($event)"></app-add-psychology-effect>
+      </div>
+    </div>  
+
+    <div class="col-4 ">
+      <div class="position-sticky">
+        <img src="https://github.com/Vorgel.png">
+
+        <div class="set2" (change)="editVitality()">
+          <h2>Żywotność </h2>
+
+          <div class="row justify-content-evenly">
+            <div class="col-md-6">
+              <label class="form-label" for="inputHp">Obecne</label>
+              <input value="{{character.vitality!.healthPoints}}" [(ngModel)]="character.vitality!.healthPoints" type="number" class="form-control" id="inputHp">
+            </div>
+    
+            <div class="col-md-6">
+              <label class="form-label" for="inputMaxHp">Max</label>
+              <input value="{{character.vitality!.maxHealthPoints}}" [(ngModel)]="character.vitality!.maxHealthPoints" type="number" class="form-control" id="inputMaxHp">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</main>

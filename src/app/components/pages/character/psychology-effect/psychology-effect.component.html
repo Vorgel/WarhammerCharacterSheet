@@ -1,0 +1,6 @@
+<div class="input-group">
+    <input value="{{psychologyEffect.name}}" [(ngModel)]="psychologyEffect.name" type="text" class="form-control">
+    <span class="input-group-text" (click)="onDelete()">
+        <fa-icon class="fa-solid fa-xl" [ngStyle]="{'color': 'red'}" [icon]="faTimes" ></fa-icon>
+    </span>
+</div>

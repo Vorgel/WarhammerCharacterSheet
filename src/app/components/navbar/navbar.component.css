@@ -1,0 +1,27 @@
+.nav-link {
+    color: white
+}
+
+.active {
+    color: black !important;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.nav-pills .nav-link.active{
+    background-color: white;
+}
+
+.nav-item{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+body { 
+    padding-top: 70px; 
+}
+
+.navbar{
+    background: #333333;
+    font-family: Roboto;
+}
