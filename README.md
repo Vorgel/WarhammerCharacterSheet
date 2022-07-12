@@ -1,6 +1,6 @@
 # WarhammerCharacterSheet
 
-So this project is a Web application created in Angular 13 to manage Warhammer Character Sheet. 
+So this project is a Web application created in Angular 13 and BootStrap v5 to manage Warhammer Character Sheet. 
 
 It's connected to another project - CharacterSheetAPI (backend created in .NET using MVC API).
 
