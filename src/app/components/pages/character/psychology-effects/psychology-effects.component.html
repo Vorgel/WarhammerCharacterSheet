@@ -1,0 +1,10 @@
+<h1>Psychologia</h1>
+<div class="row">
+    <app-psychology-effect
+        *ngFor="let effect of psychologyEffects" 
+        [psychologyEffect]="effect"
+        (change)="editPsychologyEffect(effect)"
+        (onDeletePsychologyEffect)="deletePsychologyEffect(effect)" >
+    </app-psychology-effect>
+</div>
+<app-add-psychology-effect class="row" (onAddPsychologyEffect)="addPsychologyEffect($event)"></app-add-psychology-effect>

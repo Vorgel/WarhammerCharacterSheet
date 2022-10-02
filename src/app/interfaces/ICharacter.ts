@@ -7,6 +7,7 @@ import { ISpeed } from "./ISpeed";
 import { ITalent } from "./ITalent";
 import { IVitality } from "./IVitality";
 import { IPsychologyEffect } from "./IPsychologyEffect";
+import { ICharacteristics } from "./ICharacteristic";
 
 export interface ICharacter {
     characterID:number;
@@ -18,6 +19,7 @@ export interface ICharacter {
     professionPath?:string;
     status?:string;
     age?:number;
+    characteristics?:ICharacteristics[];
     corruptionPoints?:number;
     sinPoints?:number;
     appearance?: IAppearance;

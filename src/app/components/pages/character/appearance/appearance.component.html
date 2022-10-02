@@ -1,0 +1,32 @@
+<h1> Wygląd </h1>
+
+<div class="row" (change)="editAppearance()">
+
+<div class="col-md-2">
+  <label class="form-label" for="inputHeight">Wzrost</label>
+  <input value="{{appearance!.height}}" [(ngModel)]="appearance!.height" type="number" class="form-control" id="inputHeight">
+</div>
+
+<div class="col-md-4">
+  <label class="form-label" for="inputEyesColor">Kolor oczu</label>
+  <input value="{{appearance!.eyesDescription}}" [(ngModel)]="appearance!.eyesDescription" type="text" class="form-control" id="inputEyesColor">
+</div>
+
+<div class="col-md-6">
+  <label class="form-label" for="inputHair">Włosy</label>
+  <input value="{{appearance!.hairDescription}}" [(ngModel)]="appearance!.hairDescription" type="text" class="form-control" id="inputHair">
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-md-6">
+  <label class="form-label" for="inputBodyDescription">Budowa ciała</label>
+  <input value="{{appearance!.bodyDescription}}" [(ngModel)]="appearance!.bodyDescription" type="text" class="form-control" id="inputBodyDescription">
+</div>
+
+<div class="col-md-6">
+  <label class="form-label" for="inputDistinghusingFeatures">Znaki Szczególne</label>
+  <input value="{{appearance!.distinguishingFeatures}}" [(ngModel)]="appearance!.distinguishingFeatures" type="text" class="form-control" id="inputDistinghusingFeatures">
+</div>
+</div>

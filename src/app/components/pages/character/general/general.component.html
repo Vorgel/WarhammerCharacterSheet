@@ -1,0 +1,49 @@
+<h1> Ogólne </h1>
+
+<div class="row">
+  <div class="col-md-6">
+    <label class="form-label" for="inputName">Imie</label>
+    <input value="{{character.name}}" [(ngModel)]="character.name" type="text" class="form-control" id="inputName" > 
+  </div>
+
+  <div class="col-md-6">
+    <label class="form-label" for="inputRace">Rasa</label>
+    <input value="{{character.race}}" [(ngModel)]="character.race" type="text" class="form-control" id="inputRace">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2">
+    <label class="form-label" for="inputAge">Wiek</label>
+    <input value="{{character.age}}" [(ngModel)]="character.age" type="number" class="form-control" id="inputAge">
+  </div>
+
+  <div class="col-md-5">
+    <label class="form-label" for="inputClass">Klasa</label>
+    <input value="{{character.class}}" [(ngModel)]="character.class" type="text" class="form-control" id="inputClass">
+  </div>
+
+  <div class="col-md-5">
+    <label class="form-label" for="inputClass">Status</label>
+    <input value="{{character.status}}" [(ngModel)]="character.status" type="text" class="form-control" id="inputStatus">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <label class="form-label" for="inputProfession">Profesja</label>
+    <input value="{{character.profession}}" [(ngModel)]="character.profession" type="text" class="form-control" id="inputProfession">
+  </div>
+
+  <div class="col-6">
+    <label class="form-label" for="InputProfessionLevel">Poziom Profesji</label>
+    <input value="{{character.professionLevel}}" [(ngModel)]="character.professionLevel" type="text" class="form-control" id="InputProfessionLevel">
+  </div>
+</div>
+
+<div class="row"> 
+  <div class="col-12">
+    <label class="form-label" for="inputProfessionPath">Ścieżka Profesji</label>
+    <input value="{{character.professionPath}}" [(ngModel)]="character.professionPath" type="text" class="form-control" id="inputProfessionPath">
+  </div>
+
+</div>

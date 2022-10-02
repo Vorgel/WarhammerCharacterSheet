@@ -1,0 +1,26 @@
+tr {
+    text-align: center;
+    vertical-align: middle;
+    font-size: medium;
+    font-weight: 500;
+}
+
+th.mat-header-cell {
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-size: medium;
+    font-weight: 500;
+}
+.mat-header-cell {
+    font-size: medium;
+    font-weight: 500;
+}
+
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+    padding: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}

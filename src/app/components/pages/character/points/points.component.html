@@ -1,0 +1,32 @@
+<h1> Punkty </h1>
+
+<div class="row">
+    <div class="col-md-5" (change)="editDestiny()">
+    <label class="form-label" for="inputDestinyPoints">Punkty Przeznaczenia</label>
+    <input value="{{destiny!.destinyPoints}}" [(ngModel)]="destiny!.destinyPoints" type="number" class="form-control" id="inputDestinyPoints">
+    </div>
+
+    <div class="col-md-5" (change)="editDestiny()">
+    <label class="form-label" for="inputLuckPoints">Punkty Szczęścia</label>
+    <input value="{{destiny!.luckPoints}}" [(ngModel)]="destiny!.luckPoints" type="number" class="form-control" id="inputLuckPoints">
+    </div>
+</div>
+
+<div class="row" (change)="editHeroStats()">
+    <div class="col-md-5" >
+    <label class="form-label" for="inputHeroPoints">Punkty Bohatera</label>
+    <input value="{{heroStats!.heroPoints}}" [(ngModel)]="heroStats!.heroPoints" type="number" class="form-control" id="inputHeroPoints">
+    </div>
+
+    <div class="col-md-5" >
+    <label class="form-label" for="inputDeterminationPoints">Punkty Determinacji</label>
+    <input value="{{heroStats!.determinationPoints}}" [(ngModel)]="heroStats!.determinationPoints" type="number" class="form-control" id="inputDeterminationPoints">
+    </div>
+</div>
+
+<div class="row" (change)="editHeroStats()">
+    <div class="col-md-5">
+    <label class="form-label" for="inputMotivation">Motywacja</label>
+    <input value="{{heroStats!.motivation}}" [(ngModel)]="heroStats!.motivation" type="text" class="form-control" id="inputMotivation">
+    </div>
+</div>

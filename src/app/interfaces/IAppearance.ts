@@ -1,5 +1,4 @@
 export interface IAppearance {
-    appearanceID?: number;
     characterID: number;
     height?:number;
     hairDescription?:string;

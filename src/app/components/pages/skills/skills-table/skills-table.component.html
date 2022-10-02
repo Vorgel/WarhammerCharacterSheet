@@ -1,0 +1,35 @@
+<table mat-table [dataSource]="skills" class="table table-striped table-bordered table-hover">
+
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef>Nazwa Umiejętności</th>
+    <td mat-cell *matCellDef="let skill"> {{ skill.name }} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="type">
+    <th mat-header-cell *matHeaderCellDef>Cecha</th>
+    <td mat-cell *matCellDef="let skill"> {{ getCharacteristicsTypeName(skill.type) }} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="typeValue">
+    <th mat-header-cell *matHeaderCellDef>Wartość cechy</th>
+    <td mat-cell *matCellDef="let skill"> {{ getCharacteristicsValue(skill.type) }} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="experienceDevelopedValue">
+    <th mat-header-cell *matHeaderCellDef>Rozwinięcie</th>
+    <td mat-cell *matCellDef="let skill"> {{ skill.experienceDevelopedValue }} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="talentsDevelopedValue">
+    <th mat-header-cell *matHeaderCellDef>Talenty</th>
+    <td mat-cell *matCellDef="let skill"> {{ skill.talentsDevelopedValue }} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="sum">
+    <th mat-header-cell *matHeaderCellDef>Suma</th>
+    <td mat-cell *matCellDef="let skill"> {{ getCharacteristicsValue(skill.type) + skill.experienceDevelopedValue + skill.talentsDevelopedValue }} </td>
+  </ng-container>
+  
+  <tr mat-header-row *matHeaderRowDef="columndefs"></tr>
+  <tr mat-row *matRowDef="let row; columns: columndefs;"></tr>
+</table>

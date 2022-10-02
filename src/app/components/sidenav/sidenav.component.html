@@ -1,0 +1,26 @@
+<div class="example-container">
+  <mat-toolbar color="primary" class="example-toolbar">
+    <mat-icon (click)="snav.toggle()">menu</mat-icon>
+    <h1 class="example-app-name">Warhammer Character Sheet</h1>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav #snav > 
+      <mat-nav-list (click)="snav.toggle()">
+        <mat-list-item routerLink="character">Postać</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item routerLink="skills">Umiejetnosci i Talenty</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item routerLink="equipment">Ekwipunek</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item routerLink="spells">Czary i Modlitwy</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item routerLink="additional">Dodatkowe</mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

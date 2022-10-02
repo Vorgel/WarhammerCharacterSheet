@@ -1,0 +1,18 @@
+<h1>Doświadczenie</h1>
+
+<div class="row" (change)="editExperience()">
+    <div class="col-md-5">
+    <label class="form-label" for="inputCurrentExp">Aktualne</label>
+    <input value="{{experience!.available}}" [(ngModel)]="experience!.available" type="number" class="form-control" id="inputCurrentExp">
+    </div>
+
+    <div class="col-md-5">
+    <label class="form-label" for="inputSpentExp">Wydane</label>
+    <input value="{{experience!.spent}}" [(ngModel)]="experience!.spent" type="number" class="form-control" id="inputSpentExp">
+    </div>
+
+    <div class="col-md-2 expSum">
+    <label class="form-label" for="inputSumExp">Suma</label>
+    <h3>{{experience!.spent + experience!.available}}</h3> 
+    </div>
+</div>

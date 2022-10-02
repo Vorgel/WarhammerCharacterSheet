@@ -1,0 +1,13 @@
+<h2>Żywotność </h2>
+
+<div class="row justify-content-evenly">
+  <div class="col-md-6">
+    <label class="form-label" for="inputHp">Obecne</label>
+    <input value="{{vitality!.healthPoints}}" [(ngModel)]="vitality!.healthPoints" type="number" class="form-control" id="inputHp">
+  </div>
+
+  <div class="col-md-6">
+    <label class="form-label" for="inputMaxHp">Max</label>
+    <input value="{{vitality!.maxHealthPoints}}" [(ngModel)]="vitality!.maxHealthPoints" type="number" class="form-control" id="inputMaxHp">
+  </div>
+</div>

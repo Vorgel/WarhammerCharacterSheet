@@ -1,0 +1,64 @@
+.container{
+    padding-top:  100px;
+    font-family: Roboto;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    display: block;
+    margin:auto;
+    margin-top: auto;
+    max-height: 350px;
+    max-width: 350px;
+    border-radius: 50px;
+}
+
+.set {
+    margin-bottom: 80px;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: darkblue;
+    border-radius: 20px;
+
+    padding:2rem;
+}
+
+label {
+    font-size: larger;
+}
+
+.set2 {
+    margin: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: darkblue;
+    border-radius: 20px;
+    padding:1rem;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.position-sticky{
+    top: 2rem;
+}
+
+.expSum {
+    vertical-align: bottom;
+    align-self: center;
+    text-align: center;
+}

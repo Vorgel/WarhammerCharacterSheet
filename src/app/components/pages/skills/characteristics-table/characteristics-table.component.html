@@ -1,0 +1,27 @@
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th class="col-sm-1"></th>
+            <th class="col-sm-1" *ngFor="let characteristic of characteristics; index as i">{{ getCharacteristicsName(getCharacteristic(i)!.type) }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Początkowa</th>
+            <td *ngFor="let characteristic of characteristics; index as i" > {{ getCharacteristic(i)!.baseValue }} </td>
+        </tr>
+        <tr>
+            <th>Exp</th>
+            <td *ngFor="let characteristic of characteristics; index as i" > {{ getCharacteristic(i)!.experienceDevelopedValue }} </td>
+        </tr>
+        <tr>
+            <th>Talenty</th>
+            <td *ngFor="let characteristic of characteristics; index as i" > {{ getCharacteristic(i)!.talentsDevelopedValue}} </td>
+        </tr>
+        <tr>
+            <th>Suma</th>
+            <td *ngFor="let characteristic of characteristics; index as i" > {{ getCharacteristic(i)!.baseValue + getCharacteristic(i)!.talentsDevelopedValue + getCharacteristic(i)!.experienceDevelopedValue}} </td>
+        </tr>
+    </tbody>
+  </table>
+  

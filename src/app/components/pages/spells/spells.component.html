@@ -1,1 +1,10 @@
-<p>spells works!</p>
+<main class="container"> 
+    <div class="row justify-content-evenly">
+        <h1>Zaklęcia</h1>
+        <app-spells-table [characterID]="characterID" ></app-spells-table>
+     
+        <h1>Modlitwy</h1>
+        <app-incantations-table [characterID]="characterID"></app-incantations-table>
+       
+    </div>
+</main>

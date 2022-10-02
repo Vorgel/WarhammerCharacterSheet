@@ -1,1 +1,16 @@
-<p>skills works!</p>
+<main class="container">
+    <div class="row justify-content-evenly">
+        <h1>Cechy</h1>
+        <app-characteristics-table [characterID]="characterID" [characteristics]="characteristics" ></app-characteristics-table >
+                
+        <div class="col-7">
+            <h1>Umiejętności</h1>
+            <app-skills-table [characterID]="characterID" [characteristics]="characteristics" ></app-skills-table>
+        </div>
+        
+        <div class="col-5">
+            <h1>Talenty</h1>
+            <app-talents-table [characterID]="characterID" ></app-talents-table>
+        </div>
+    </div>
+</main>
